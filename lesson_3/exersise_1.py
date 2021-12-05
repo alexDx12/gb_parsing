@@ -111,5 +111,6 @@ target_vacancies = list(db.hh_collection.find({
     'currency': target_currency,
     '$or': [{"min salary": {'$gt': target_salary}}, {"max salary": {'$gt': target_salary}}]
 }))
+
 for target_vacancy in target_vacancies:
     pprint(target_vacancy)
