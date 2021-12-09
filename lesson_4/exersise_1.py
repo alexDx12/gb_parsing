@@ -14,7 +14,6 @@ news.mail.ru, lenta.ru, yandex-новости. Для парсинга испо�
 from lxml import html
 import requests
 from pymongo import MongoClient
-from pprint import pprint
 
 # Подключение базы данных
 client = MongoClient('localhost', 27017)
@@ -41,4 +40,4 @@ for item in items:
     if name and not db.lenta_collection.find_one({'news link': news_link}):
         db.lenta_collection.insert_one(news)  
     # if name - фильтрация тэга с изображением первой новости, 
-    # not db.lenta_collection.find_one({'news link': news_link}) - проверка отсутствия текущей новости в базк данных.
+    # not db.lenta_collection.find_one({'news link': news_link}) - проверка отсутствия текущей новости в базе данных.
