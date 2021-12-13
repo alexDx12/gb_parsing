@@ -25,7 +25,6 @@ response = requests.get('https://lenta.ru/', headers=header)
 dom = html.fromstring(response.text)
 items = dom.xpath("//section[contains(@class, 'b-top7-for-main')]/*/div[contains(@class, 'item')]/a | //h2/a")
 
-temp = []
 # Скраппинг новостей
 for item in items:
     news = {}
