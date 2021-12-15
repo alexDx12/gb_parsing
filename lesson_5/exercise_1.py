@@ -20,7 +20,6 @@ db = client["letters_db"]
 
 # Подготовка страницы к сбору данных
 driver = webdriver.Chrome(executable_path='/Users/alexander/Documents/GeekBrains/II_четверть/Методы_сбора_и_обработки_данных_из_сети_Интернет/repository/lesson_5/chromedriver')
-
 driver.implicitly_wait(120)
 driver.maximize_window()
 driver.get("https://mail.ru/")
