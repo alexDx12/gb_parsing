@@ -13,7 +13,7 @@ class InstaSpider(scrapy.Spider):
     start_urls = ['https://instagram.com/']
     inst_login_link = 'https://www.instagram.com/accounts/login/ajax/'
     inst_login = 'av_dunaev@mail.ru'
-    inst_pwd = '#PWD_INSTAGRAM_BROWSER:9:1641438209:AVdQAE/hN3IbLouTLX+mQm0JA+hBtMa7bpBMF/3Kjq18Avlrxnr5Lj1RdAt82MAG+lYpIVBZdBxF575/rvy5XQxMF+ttPTwnO7bdIuJuMYk/oeNSaAr1k0vlTP0hVTcoDvjrudOtJwVKCUe0zw=='
+    inst_pwd = '**************'
     users_parse = ['python.learning', 'machinelearning', 'artificialintelligence_ai']
     inst_friends_link = 'https://i.instagram.com/api/v1/friendships/'
     users_type = ['followers', 'following']
